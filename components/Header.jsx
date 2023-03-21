@@ -1,10 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { SearchIcon} from "@heroicons/react/outline";
+
 
 export default function Header() {
   return (
-    <div>
+  
       <div className="flex max-w-6xl items-center justify-between">
+        {/* left */}
         <div className="cursor-pointer w-24 h-24 relative hidden lg:inline-grid">
           <Image
             src="http://www.jennexplores.com/wp-content/uploads/2015/09/Instagram_logo_black.png"
@@ -19,13 +22,22 @@ export default function Header() {
             className="object-contain"
           />
         </div>
+        {/* middle */}
+        <div className="relative mt-1">
+            <div className="absolute top-2 left-2">
+            <SearchIcon className="h-5 text-gray-500" />
+            </div>
+            <input type="text" placeholder="Search" className="bg-gray-50 pl-10 border-gray-500 text-sm focus:ring-black focus:border-black rounded-md"/>
+        </div>
+
+         {/* right */}
         <h1>right</h1>
       </div>
-      {/* left */}
+      
 
-      {/* middle */}
+      
 
-      {/* right */}
-    </div>
+     
+    
   );
 }
