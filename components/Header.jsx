@@ -5,8 +5,8 @@ import { HomeIcon } from "@heroicons/react/solid"
 
 export default function Header() {
   return (
-  
-      <div className="flex max-w-6xl items-center justify-between mx-4 xl:mx-auto">
+  <div className="shadow-sm border-b sticky top-0 z-30">
+    <div className="flex max-w-6xl items-center justify-between mx-4 xl:mx-auto">
         {/* left */}
         <div className="cursor-pointer w-24 h-24 relative hidden lg:inline-grid">
           <Image
@@ -37,6 +37,8 @@ export default function Header() {
             <img src="https://pps.whatsapp.net/v/t61.24694-24/266085040_763312398451113_5669021778600555408_n.jpg?ccb=11-4&oh=01_AdQGgiBhMM9hcVyr4FAhFENGFQSe79pSq2a1sxZU33Loow&oe=6426B67A" alt="user-image" className="h-10 rounded-full cursor-pointer"/>
         </div>
       </div>
+  </div>
+      
       
 
       
